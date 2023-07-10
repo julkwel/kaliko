@@ -37,8 +37,10 @@
 
 .result-content {
     width: 400px;
+    height: 200px;
     padding: 10px;
     color: black;
+    margin-top: 5px;
 }
 
 #clear-result {
