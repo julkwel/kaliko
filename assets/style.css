@@ -7,6 +7,7 @@
 
 .title {
     text-align: center;
+    color: rgb(118, 118, 118);
 }
 
 .github-logo {
@@ -69,6 +70,7 @@
 
 body,
 html {
+    background: radial-gradient(white, orange);
     margin: 0px;
     padding: 0px;
 }
