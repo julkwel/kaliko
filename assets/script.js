@@ -5,11 +5,16 @@ const mainHolder = document.getElementById('main-holder');
 const ingHolder = document.getElementById('ingredient-holder');
 const btnClearResult = document.getElementById('clear-result');
 const whishMessageContainer = document.getElementById('wishes-message');
+const loadItContainer = document.getElementById("load-it");
 
 btnGenerator.onclick = function() {
-    doGenerate();
-    btnClearResult.removeAttribute('disabled');
-    whishMessageContainer.style.display = 'block';
+    loadIt(true);
+    setTimeout(() => {
+        loadIt(false);
+        doGenerate();
+        btnClearResult.removeAttribute('disabled');
+        whishMessageContainer.style.display = 'block';
+    }, 1000);
 }
 
 btnClearResult.onclick = function() {
@@ -33,4 +38,8 @@ getMain = () => {
 
 getIngredient = () => {
     return ingredients[Math.floor(Math.random()*ingredients.length)];
+}
+
+loadIt = (load) => {
+    loadItContainer.style.display = load === true ? 'flex' : 'none';
 }
