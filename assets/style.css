@@ -42,8 +42,9 @@
 }
 
 #clear-result {
+    cursor: pointer;
     height: 40px;
-    width: auto;
+    width: 100px;
     padding: 10px;
     background: #ff5500;
     color: white;
@@ -53,8 +54,9 @@
 }
 
 .btn-primary {
+    cursor: pointer;
     height: 40px;
-    width: auto;
+    width: 100px;
     padding: 10px;
     background: #0093ff;
     color: white;
